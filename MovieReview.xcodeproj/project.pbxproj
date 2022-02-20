@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E0C1DCD627C2FBB7002A3604 /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C1DCD527C2FBB7002A3604 /* MoviesViewController.swift */; };
 		E0D5F3D427C2E00F008BB5C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D5F3D327C2E00F008BB5C4 /* AppDelegate.swift */; };
 		E0D5F3D627C2E00F008BB5C4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D5F3D527C2E00F008BB5C4 /* SceneDelegate.swift */; };
 		E0D5F3D827C2E00F008BB5C4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D5F3D727C2E00F008BB5C4 /* ViewController.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E0C1DCD527C2FBB7002A3604 /* MoviesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
 		E0D5F3D027C2E00F008BB5C4 /* MovieReview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieReview.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0D5F3D327C2E00F008BB5C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E0D5F3D527C2E00F008BB5C4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				E0D5F3DC27C2E011008BB5C4 /* Assets.xcassets */,
 				E0D5F3DE27C2E011008BB5C4 /* LaunchScreen.storyboard */,
 				E0D5F3E127C2E011008BB5C4 /* Info.plist */,
+				E0C1DCD527C2FBB7002A3604 /* MoviesViewController.swift */,
 			);
 			path = MovieReview;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 				E0D5F3D827C2E00F008BB5C4 /* ViewController.swift in Sources */,
 				E0D5F3D427C2E00F008BB5C4 /* AppDelegate.swift in Sources */,
 				E0D5F3D627C2E00F008BB5C4 /* SceneDelegate.swift in Sources */,
+				E0C1DCD627C2FBB7002A3604 /* MoviesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
