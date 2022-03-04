@@ -44,9 +44,7 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         tableView.delegate = self
 
         // Do any additional setup after loading the view.
-        
-        print("Hello")
-        
+                
         let url = URL(string: "https://api.themoviedb.org/3/movie/now_playing?api_key=a07e22bc18f5cb106bfe4cc1f83ad8ed")!
         let request = URLRequest(url: url, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: 10)
         let session = URLSession(configuration: .default, delegate: nil, delegateQueue: OperationQueue.main)
@@ -59,7 +57,7 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
                    
                  self.movies = dataDictionary["results"] as! [[String:Any]]
                  self.tableView.reloadData()
-                     print(dataDictionary)
+                     //print(dataDictionary)
                         
                      // TODO: Get the array of movies
                     // TODO: Store the movies in a property to use elsewhere
@@ -73,14 +71,26 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
     }
     
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
+    // send parameter is the cell that is tapped
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
+        
+        print("loading up new screen")
+        
+        // find the selected movie
+        let cell = sender as! UITableViewCell // assigns the tapped cell to variable cell
+        let indexPath = tableView.indexPath(for: cell)! // index path retrieves the index path for the celll
+        let movie = movies[indexPath.row] // then you access the movie from the movies array
+        
+        // pass the selected movie to the details view controller
+        let detailsViewController = segue.destination as! MovieDetailsViewController // segue knows where the next scene is. You must cast it to MovieDetailsViewController since it will provide a generic ViewContoller
+        detailsViewController.movie = movie // now the movie is being passed along to the new scene
+        
+        tableView.deselectRow(at: indexPath, animated: true)
     }
-    */
-
 }
